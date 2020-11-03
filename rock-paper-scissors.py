@@ -26,7 +26,27 @@ while True:
             print("rock beats scissors - user wins")
             user_score += 1
 
-# to be continued...
+    elif user == "paper":
+        if computer == "scissors":
+            print("scissors beats paper - computer wins")
+            computer_score += 1
+        else:
+            print("paper beats rock - user wins")
+            user_score += 1
 
+    elif user == "scissors":
+        if computer == "rock":
+            print("rock beats scissors - computer wins")
+            computer_score += 1
+        else:
+            print("scissors beats paper - user wins")
+            user_score += 1
+            
+    else:
+            print("That's not a valid input.")
                   
-
+print(f"\nUser won {user_score} time(s) and computer won {computer_score} time(s)")
+if computer_score == 3:
+    print("\nComputer has won the game! ")   
+else:
+    print("\nUser has won the game! ")
